@@ -1,0 +1,140 @@
+.welcome {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+
+.guestbook{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	width:800px;
+	text-align:left;
+	border-collapse:collapse;
+	margin:20px;
+}
+.guestbook th{
+	font-size:18px;
+	font-weight:normal;
+	background:#109177;
+	border-top:4px solid #fff;
+	border-bottom:1px solid #fff;
+	color:#FFF;
+	padding:8px;
+}
+.guestbook td{
+	background: #f4f7f8;
+	border-bottom:1px solid #fff;
+	color:#8a97a0;
+	border-top:1px solid transparent;
+	padding:8px;
+}
+.guestbook tr:hover td{
+	background-color: #e8eeef;
+	color:#8a97a0;
+}
+
+
+
+.sign-form {
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.sign-form fieldset{
+    border: none;
+}
+.sign-form legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.sign-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+.sign-form input[type="text"],
+.sign-form input[type="date"],
+.sign-form input[type="datetime"],
+.sign-form input[type="email"],
+.sign-form input[type="number"],
+.sign-form input[type="search"],
+.sign-form input[type="time"],
+.sign-form input[type="url"],
+.sign-form textarea,
+.sign-form select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    
+}
+.sign-form input[type="text"]:focus,
+.sign-form input[type="date"]:focus,
+.sign-form input[type="datetime"]:focus,
+.sign-form input[type="email"]:focus,
+.sign-form input[type="number"]:focus,
+.sign-form input[type="search"]:focus,
+.sign-form input[type="time"]:focus,
+.sign-form input[type="url"]:focus,
+.sign-form textarea:focus,
+.sign-form select:focus{
+    background: #d2d9dd;
+}
+.sign-form select{
+    -webkit-appearance: menulist-button;
+    height:35px;
+}
+.sign-form .number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.sign-form input[type="submit"],
+.sign-form input[type="button"]
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+.sign-form input[type="submit"]:hover,
+.sign-form input[type="button"]:hover
+{
+    background: #109177;
+}

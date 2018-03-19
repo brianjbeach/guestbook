@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Guestbook</title>
+<link rel="stylesheet" type="text/css" href="static/style.css" />
+<script src="https://code.jquery.com/jquery-1.10.2.js" ></script>
+</head>
+<body>
+<div align=center>
+<p class="welcome">Welcome to the Guestbook</p>
+<img src="static/pencil.gif"/>
+<table id="guestbook" class="guestbook" summary="Employee Pay Sheet">
+<thead>
+<tr>
+<th scope="col">Name</th>
+<th scope="col">Email</th>
+<th scope="col">Comments</th>
+</tr>
+</thead>
+<tbody>
+<!--DATA GOES HERE-->
+</tbody>
+</table>
+<p>This page was served from {{ server }}. <a href="sign">Click here to sign the Guestbook</a></p>
+</div>
+<script>
+$.ajax(
+	{
+		type: "GET",
+		url: 'data',
+		contentType: "application/json",
+		dataType: "json",
+		cache: false,
+		success: function (data) {
+			trHTML = ""
+			$.each(data, function (i, item) {
+				trHTML += '<tr><td>' + item.name + '</td><td>' + item.email + '</td><td>' + item.comments + '</td></tr>';
+			});
+			$('#guestbook').append(trHTML);
+		}
+	}
+)
+</script>
+</body>
+</html>
